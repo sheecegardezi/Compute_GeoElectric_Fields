@@ -24,11 +24,11 @@ This program was written by Joan Campanya (of TCD), and Sean Blake (of TCD). Thi
 ## 1. Main Structure of the program:
 The algorithm is divided in three folders:
 
-a.  **in** folder. Contains the requested input data 
+a.  [in] folder. Contains the requested input data 
 
-b.  **out** folder. contains sub-products created during the modelling, whithin SECS folder, and the computed electric time series specifying: 1) name of the site, 2) component of the electric field, 3) storm, and 4) approach used to compute the electric fields.
+b.  [out] folder. contains sub-products created during the modelling, whithin SECS folder, and the computed electric time series specifying: 1) name of the site, 2) component of the electric field, 3) storm, and 4) approach used to compute the electric fields.
 
-c.  **scr** folder. 
+c.  [scr] folder. Contains the scripts used to modell geoelectric fields
 
 ## 1.1 **in** folder
 
