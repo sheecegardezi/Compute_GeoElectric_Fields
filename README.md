@@ -87,4 +87,9 @@ This filder contains the main programs and an input file with the main parameter
 
 2) The current version is parallelised when computing SECS but only one CPU is selected. User should modify this in "SECS_interpolation.py" depending on the computing possibilities.
 
-3) The provided code contains geoelectric and geomagnetic time series, so it can be tested. Results should be similar to Figure 1. Additional time series fo the same sites can be accessed from INTERMAGNET (www.intermagnet.org), Rosse observatory (http://www.rosseobservatory.ie/data), and the British Geological Survey (BGS)  http://www.geomag.bgs.ac.uk/data_service/space_weather/geoelectric.html). Here, we also attached additional geoelectric and geomagnetic data from Leitrim and Armagh, which are less accessible to the public.
+3) The provided code contains geoelectric and geomagnetic time series, so it can be tested. With the current set up (only having to modify the main path), results after executing EM_modelling.py and EM_plotting.py should be similar to Figures 1 and 2. Additional time series fo the same sites can be accessed from INTERMAGNET (www.intermagnet.org), Rosse observatory (http://www.rosseobservatory.ie/data), and the British Geological Survey (BGS)  http://www.geomag.bgs.ac.uk/data_service/space_weather/geoelectric.html). 
+
+Figure 1 Modelled geoelectric fields in Lei during 22-23/06/2015 geomagnetic storm following approach SECS-ITF. Results are compared with measured electric fields.
+![alt text](geoelectric_LEI.png)
+Figure 2
+![alt text](geoelectric_ESK.png)
