@@ -1,8 +1,8 @@
 # Compute_GeoElectric_Fields
 
-Code for modelling GeoElectric fields during geomagnetic storms are based on: 1) magnetic measurements from magnetic observatories, and 2) geophysical parameters (i.e. electromagnetic tensor relationships).
+Code for modelling GeoElectric fields during geomagnetic storms based on: 1) magnetic measurements from magnetic observatories, and 2) geophysical parameters (i.e. electromagnetic tensor relationships).
 
-This program was written by Joan Campanya i Llovet (of TCD), and Sean Blake (of TCD). This code is a result of the IRC Enterpise partneship between UK Met Office and Trinity College Dublin. The project was in collaboration with British Geological Survey (BGS), and the Dublin Institute for Advanced Studies (DIAS).
+This program was written by Joan Campanya i Llovet (of TCD) and Sean Blake (of TCD), and implemented and validated with data from Ireland and the UK (see Campanya et al., for more details). This code is a result of the IRC Enterpise partneship between UK Met Office and Trinity College Dublin. The project was in collaboration with British Geological Survey (BGS), and the Dublin Institute for Advanced Studies (DIAS).
 
 ## Dependencies needed (All python programs are written in Python 2.7).
 
