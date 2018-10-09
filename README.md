@@ -90,7 +90,7 @@ This filder contains the main programs and an input file with the main parameter
 3) The provided code contains geoelectric and geomagnetic time series, so it can be tested. With the current set up (only having to modify the main path), results after executing EM_modelling.py and EM_plotting.py should be similar to Figures 1 and 2. Additional time series fo the same sites can be accessed from INTERMAGNET (www.intermagnet.org), Rosse observatory (http://www.rosseobservatory.ie/data), and the British Geological Survey (BGS)  http://www.geomag.bgs.ac.uk/data_service/space_weather/geoelectric.html). 
 
 -------------------------------------------------------------------------------
-**Figures**
+##**Figures**
 
 ![alt text](geoelectric_LEI.png)
 
