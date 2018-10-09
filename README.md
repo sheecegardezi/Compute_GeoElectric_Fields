@@ -100,5 +100,4 @@ This filder contains the main programs and an input file with the main parameter
 
 
 ![alt text](geoelectric_ESK.png)
-
 **Figure 2** Modelled geoelectric fields at Leitrim during 22-23/06/2015 geomagnetic storm following approach SECS-ITF. Results are compared with measured electric fields (in black).
