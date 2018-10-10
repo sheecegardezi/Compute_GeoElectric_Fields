@@ -85,11 +85,11 @@ This filder contains the main programs and an input file with the main parameter
 1.3.5. **inputs.py** contains all the inputs that need to be specified for modelling and plotting geoelectric fields. 
 
 ## NOTES
-1) **inputs.py** is the only file that needs to be modified when all the necessary inputs (electromagnetic time series and electromagnetic tensor relationships) are at the selected folders. On the presented example, only the *main_path* in **inputs.py** will need to be modified and the example should run, first executing **EM_modelling.py** and then **EM_plotting.py**.
+N1) **inputs.py** is the only file that needs to be modified when all the necessary inputs (electromagnetic time series and electromagnetic tensor relationships) are at the selected folders. On the presented example, only the *main_path* in **inputs.py** will need to be modified and the example should run, first executing **EM_modelling.py** and then **EM_plotting.py**.
 
-2) The current version is parallelised when computing SECS but only one CPU is selected. User should modify this in "SECS_interpolation.py" depending on the computing possibilities.
+N2) The current version is parallelised when computing SECS but only one CPU is selected. User should modify this in "SECS_interpolation.py" depending on the computing possibilities.
 
-3) The provided code contains geoelectric and geomagnetic time series, so it can be tested. With the current set up (only having to modify the main path), results after executing EM_modelling.py and EM_plotting.py should be similar to Figures 1 and 2. Additional time series fo the same sites can be accessed from INTERMAGNET (www.intermagnet.org), Rosse observatory (http://www.rosseobservatory.ie/data), and the British Geological Survey (BGS)  http://www.geomag.bgs.ac.uk/data_service/space_weather/geoelectric.html). 
+N3) The provided code contains geoelectric and geomagnetic time series, so it can be tested. With the current set up (only having to modify the main path), results after executing EM_modelling.py and EM_plotting.py should be similar to Figures 1 and 2. Additional time series fo the same sites can be accessed from INTERMAGNET (www.intermagnet.org), Rosse observatory (http://www.rosseobservatory.ie/data), and the British Geological Survey (BGS)  http://www.geomag.bgs.ac.uk/data_service/space_weather/geoelectric.html). 
 
 -------------------------------------------------------------------------------
 # Figures
