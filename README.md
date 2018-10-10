@@ -7,10 +7,15 @@ This program was written by Joan Campanya i Llovet (of TCD) and Sean Blake (of T
 ## Dependencies needed (*All python programs are written in Python 2.7*)
 
 *numpy*
+
 *pandas*
+
 *matplotlib*
+
 *scipy*
+
 *seaborn*
+
 *geopy*
 
 *multiprocessing* (only to run it in parallel version)
