@@ -31,7 +31,7 @@ b.  **out** folder. contains sub-products created during the modelling, and the 
 c.  **scr** folder. Contains the scripts used for modelling the geoelectric fields
 
 
-## 1.1 **in** folder
+## 1.1 *in* folder
 
 This folder contains:
 1.1.1. **data** folder with magnetic and electric time series, and tensor relationships (*TF* folder).
@@ -61,12 +61,12 @@ c and d) Data files with name and coordinates of magnetic observatories (*Observ
 
 
 
-## 1.2 out folder
+## 1.2 *out* folder
 
 This folder contains sub-products created during the modelling, whithin **SECS** folder, and the computed electric time series specifying: 1) *name of the site*, 2) *component of the electric field*, 3) *storm*, and 4) *approach used to compute the electric fields*.
 
 
-## 1.3 **scr** folder
+## 1.3 *scr* folder
 
 This filder contains the main programs and an input file with the main parameters:
 
