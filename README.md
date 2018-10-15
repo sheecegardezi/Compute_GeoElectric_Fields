@@ -96,7 +96,7 @@ N3) The provided code contains geoelectric and geomagnetic time series, so it ca
 
 ![alt text](geoelectric_LEI.png)
 
-**Figure 1** Modelled geoelectric fields at Leitrim during 22-23/06/2015 geomagnetic storm following approach SECS-ITF. Results are compared with measured electric fields (in black).
+**Figure 1** Modelled geoelectric fields at Leitrim (~100 km from the closest magnetic observatory, assuming no measurements were performed in Leitrim) during 22-23/06/2015 geomagnetic storm following approach SECS-ITF. Results are compared with measured electric fields (in black).
 
 
 
@@ -104,4 +104,4 @@ N3) The provided code contains geoelectric and geomagnetic time series, so it ca
 
 ![alt text](geoelectric_ESK.png)
 
-**Figure 2** Modelled geoelectric fields at Leitrim during 22-23/06/2015 geomagnetic storm following approach SECS-ITF. Results are compared with measured electric fields (in black).
+**Figure 2** Modelled geoelectric fields at Eskaldeimur (~250 km from the closest magnetic observaotry, assuming no measurements were performed in ESK) during 22-23/06/2015 geomagnetic storm following approach SECS-ITF. Results are compared with measured electric fields (in black).
