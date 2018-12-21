@@ -4,7 +4,7 @@ Code for modelling GeoElectric fields during geomagnetic storms based on: 1) mag
 
 This program was written by Joan Campanya i Llovet (of TCD) and Sean Blake (of TCD), and implemented and validated with data from Ireland and the UK (see Campanya et al., for more details). This code is a result of the IRC Enterpise partneship between UK Met Office and Trinity College Dublin. The project was in collaboration with British Geological Survey (BGS), and the Dublin Institute for Advanced Studies (DIAS).
 
-## 0. Dependencies needed (*All python programs are written in Python 2.7*)
+## 0. Dependencies needed (*Compute_Geoelectric_p2_v1 works with Python 2.7, Compute_Geoelectric_p3_v1 works with Python 3*)
 
 *numpy*
 
@@ -90,6 +90,8 @@ N1) **inputs.py** is the only file that needs to be modified when all the necess
 N2) The current version is parallelised when computing SECS but only one CPU is selected. User should modify this in "SECS_interpolation.py" depending on the computing possibilities.
 
 N3) The provided code contains geoelectric and geomagnetic time series, so it can be tested. With the current set up (only having to modify the main path), results after executing EM_modelling.py and EM_plotting.py should be similar to Figures 1 and 2. Additional time series fo the same sites can be accessed from INTERMAGNET (www.intermagnet.org), Rosse observatory (http://www.rosseobservatory.ie/data), and the British Geological Survey (BGS)  http://www.geomag.bgs.ac.uk/data_service/space_weather/geoelectric.html). 
+
+N4) Update: The codes can now read j. and edi. files, and they detect the type of file automatically. If ".j" and ".edi" files are available it uses ".edi".
 
 -------------------------------------------------------------------------------
 # Figures
