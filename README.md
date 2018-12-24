@@ -4,7 +4,7 @@ Code for modelling GeoElectric fields during geomagnetic storms based on: 1) mag
 
 This program was written by Joan Campanya i Llovet (of TCD) and Sean Blake (of TCD), and implemented and validated with data from Ireland and the UK (see Campanya et al., for more details). This code is a result of the IRC Enterpise partneship between UK Met Office and Trinity College Dublin. The project was in collaboration with British Geological Survey (BGS), and the Dublin Institute for Advanced Studies (DIAS).
 
-## 0. Dependencies needed (*Compute_Geoelectric_p2_v1 works with Python 2.7, Compute_Geoelectric_p3_v1 works with Python 3*)
+## 0. Dependencies needed (*Compute_Geoelectric_p2 works with Python 2.7, Compute_Geoelectric_p3 works with Python 3*)
 
 *numpy*
 
