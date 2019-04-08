@@ -10,7 +10,10 @@ import os
 
 ###############################################################################
 # 1) Input variables
+###############################################################################
 
+run_parallel_version = False
+parallel_pool_size = 5
 
 # 1.1) Main Paths
 main_path = 'C:/Users/u12089/Desktop/Compute_GeoElectric_Fields/'
@@ -20,6 +23,16 @@ storm = '22-23_06_2015'
 # 1.2) Modelling approaches based on Campanya et al., 2018
 # 1.2.1) (1) for Approach #1 and (2) for Approach #2
 mode = 1
+
+
+###############################################################################
+# Select the fields depending if we are with Approach #1 or Approach #2
+###############################################################################
+fname = ""
+if mode == 1:
+    fname = "SECS_"
+if mode == 2:
+    fname = "dSECS_"
 
 # 1.2.2) if 1 will not compute interpolated magnetic fields
 avoid_comp_secs = 0
@@ -34,6 +47,10 @@ low = 10 ** 2
 # 1.4) Sampling rate (seconds)
 samp = 60.
 
+earthrad, ionorad = 6371000.0, 6471000.0  # 6371000.0, 6481000.0
+Samp_P_day = int(86400 / samp)  # Number of samples pr day !!!!
+
+
 # 1.5 Time series properties
 # 1.5.1) Starting point for the analysis
 mint = 1000
@@ -42,6 +59,7 @@ mint = 1000
 maxt = -800
 
 # 1.6) Area of interest for SECS interpolation
+# Define grid: uniform in lat and long
 secswest, secseast, secssouth, secsnorth = -15, 15, 43, 65
 
 # 1.7) Only for Approach #2
@@ -49,10 +67,13 @@ secswest, secseast, secssouth, secsnorth = -15, 15, 43, 65
 reg_ref = 'CLF'
 
 # 1.7.2) Ref. magnetic sites to compute e_fields (Approach #2)
-# rmf = ['HAD', 'BIR']
+
 rmf = ['HAD', 'BIR']
+
 ###############################################################################
 # 2) Additional inputs
+###############################################################################
+
 # No need to modify them if following the suggested structure and parameters
 # from Campanya et al., 2018
 
