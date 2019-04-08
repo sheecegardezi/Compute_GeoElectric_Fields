@@ -1,10 +1,12 @@
 # Compute_GeoElectric_Fields
 
-Code for modelling GeoElectric fields during geomagnetic storms based on: 1) magnetic measurements from magnetic observatories, and 2) geophysical parameters (i.e. electromagnetic tensor relationships).
+Code for modelling GeoElectric fields during geomagnetic storms based on: 
+1) magnetic measurements from magnetic observatories, and 
+2) geophysical parameters (i.e. electromagnetic tensor relationships).
 
-This program was written by Joan Campanya i Llovet (of TCD) and Sean Blake (of TCD), and implemented and validated with data from Ireland and the UK (see Campanya et al., for more details). This code is a result of the IRC Enterpise partneship between UK Met Office and Trinity College Dublin. The project was in collaboration with British Geological Survey (BGS), and the Dublin Institute for Advanced Studies (DIAS).
+This program was written by Joan Campanya i Llovet (of TCD) and Sean Blake (of TCD), and implemented and validated with data from Ireland and the UK (see [Campanya et al.](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018SW001999), for more details). This code is a result of the IRC Enterpise partneship between UK Met Office and Trinity College Dublin. The project was in collaboration with British Geological Survey (BGS), and the Dublin Institute for Advanced Studies (DIAS).
 
-## 0. Dependencies needed (*Compute_Geoelectric_p2 works with Python 2.7, Compute_Geoelectric_p3 works with Python 3*)
+###0. Dependencies needed (*Compute_Geoelectric_p2 works with Python 2.7, Compute_Geoelectric_p3 works with Python 3*)
 
 *numpy*
 
@@ -21,7 +23,7 @@ This program was written by Joan Campanya i Llovet (of TCD) and Sean Blake (of T
 *multiprocessing* (only to run it in parallel version)
 
 
-## 1. Main Structure of the program:
+###1. Main Structure of the program:
 The algorithm is divided in three folders:
 
 a.  **in** folder. Contains the input data 
@@ -31,7 +33,7 @@ b.  **out** folder. contains sub-products created during the modelling, and the 
 c.  **scr** folder. Contains the scripts used for modelling the geoelectric fields
 
 
-## 1.1 *in* folder
+###1.1 *in* folder
 
 This folder contains:
 1.1.1. **data** folder with magnetic and electric time series, and tensor relationships (*TF* folder).
@@ -61,12 +63,12 @@ c and d) Data files with name and coordinates of magnetic observatories (*Observ
 
 
 
-## 1.2 *out* folder
+###1.2 *out* folder
 
 This folder contains sub-products created during the modelling, whithin **SECS** folder, and the computed electric time series specifying: 1) *name of the site*, 2) *component of the electric field*, 3) *storm*, and 4) *approach used to compute the electric fields*.
 
 
-## 1.3 *scr* folder
+###1.3 *scr* folder
 
 This filder contains the main programs and an input file with the main parameters:
 
@@ -84,7 +86,7 @@ This filder contains the main programs and an input file with the main parameter
 
 1.3.5. **inputs.py** contains all the inputs that need to be specified for modelling and plotting geoelectric fields. 
 
-## NOTES
+###NOTES
 N1) **inputs.py** is the only file that needs to be modified when all the necessary inputs (electromagnetic time series and electromagnetic tensor relationships) are at the selected folders. On the presented example, only the *main_path* in **inputs.py** will need to be modified and the example should run, first executing **EM_modelling.py** and then **EM_plotting.py**.
 
 N2) The current version is parallelised when computing SECS but only one CPU is selected. User should modify this in "SECS_interpolation.py" depending on the computing possibilities.
@@ -94,7 +96,7 @@ N3) The provided code contains geoelectric and geomagnetic time series, so it ca
 N4) Update: The codes can now read j. and edi. files, and they detect the type of file automatically. If ".j" and ".edi" files are available it uses ".edi".
 
 -------------------------------------------------------------------------------
-# Figures
+###Figures
 
 ![alt text](geoelectric_LEI.png)
 
@@ -107,3 +109,18 @@ N4) Update: The codes can now read j. and edi. files, and they detect the type o
 ![alt text](geoelectric_ESK.png)
 
 **Figure 2** Modelled geoelectric fields at Eskaldeimur (~250 km from the closest magnetic observaotry, assuming no measurements were performed in ESK) during 22-23/06/2015 geomagnetic storm following approach SECS-ITF. Results are compared with measured electric fields (in black).
+
+
+###TODO 
+    1. remove abs paths
+    2. create main script to exceute program 
+    3. create command line interface 
+    4. update read me  
+    5. add backward compatiblettly to python 3 script
+    6. refactor project strucutre 
+    7. add test suit
+    8. create requiremnt file for python virtual envirment 
+    9. conform code to PEP 8 coding style 
+    
+    10. ask for test cases 
+    11. confirm paper excution 
