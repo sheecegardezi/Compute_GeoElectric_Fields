@@ -188,10 +188,14 @@ def read_magnetics( in_path, sites, mag_path, secs_path, samp, hi, low,
         perd, dif_bx_fft, dif_by_fft = scr_fft(dif_bx,dif_by,samp)
         
         # Select periods of interest
-        factor = np.ones(perd.shape[0])        
+        factor = np.ones(perd.shape[0])
+
+        # bypass the band filter - LJW 2019-04-09
+
         for i, v in enumerate (perd):
             if (v < low) or (v > hi):
                 factor[i] = 0
+
 
         bx_cfft = (factor * dif_bx_fft) 
         by_cfft = (factor * dif_by_fft) 
@@ -630,6 +634,7 @@ def compute_e_fields_secs(sb, tf_path, e_site, samp, hi, low, error_bf,
     if file_format == 1:     
         try:
             for index, line in enumerate(data):
+                line = line.strip()          # remove leading and trailing whitespaces LJW 2019-04-15
                 if 'NFREQ' in line[:5]:
                     for j in range(0, len(line)):
                         if line[j] == '=':

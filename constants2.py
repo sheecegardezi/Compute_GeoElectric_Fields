@@ -10,50 +10,29 @@ import os
 
 ###############################################################################
 # 1) Input variables
-###############################################################################
 
-run_parallel_version = False
-parallel_pool_size = 5
 
 # 1.1) Main Paths
 main_path = 'C:/Users/u11236/Desktop/Compute_GeoElectric_Fields/'
 # 1.1.2) Folder with input magnetic time series
-#storm = '22-23_06_2015'
-
-# AWAGS magnetic storm data
-storm = '01-02_12_1989'
+storm = '22-23_06_2015'
 
 # 1.2) Modelling approaches based on Campanya et al., 2018
 # 1.2.1) (1) for Approach #1 and (2) for Approach #2
 mode = 1
-
-
-###############################################################################
-# Select the fields depending if we are with Approach #1 or Approach #2
-###############################################################################
-fname = ""
-if mode == 1:
-    fname = "SECS_"
-if mode == 2:
-    fname = "dSECS_"
 
 # 1.2.2) if 1 will not compute interpolated magnetic fields
 avoid_comp_secs = 0
 
 # 1.3) Periods of interest
 # 1.3.1) maximum period to analyse (seconds)
-#hi = 10 ** 4.2
-hi = 10 ** 10.0
+hi = 10 ** 4.2
 
 # 1.3.2) minimum period to analyse (seconds)
 low = 10 ** 2
-low = 0
+
 # 1.4) Sampling rate (seconds)
 samp = 60.
-
-earthrad, ionorad = 6371000.0, 6471000.0  # 6371000.0, 6481000.0
-Samp_P_day = int(86400 / samp)  # Number of samples pr day !!!!
-
 
 # 1.5 Time series properties
 # 1.5.1) Starting point for the analysis
@@ -63,26 +42,17 @@ mint = 1000
 maxt = -800
 
 # 1.6) Area of interest for SECS interpolation
-# Define grid: uniform in lat and long Ireland
-#secswest, secseast, secssouth, secsnorth = -15, 15, 43, 65
-
-# SA
-secswest, secseast, secssouth, secsnorth = 122, 145, -43, -20
-# SA and VIC, memory error
-secswest, secseast, secssouth, secsnorth = 120, 160, -45, -17
+secswest, secseast, secssouth, secsnorth = -15, 15, 43, 65
 
 # 1.7) Only for Approach #2
 # 1.7.1) Ref. magnetic site - regional signal (Approach #2)
 reg_ref = 'CLF'
 
 # 1.7.2) Ref. magnetic sites to compute e_fields (Approach #2)
-
+# rmf = ['HAD', 'BIR']
 rmf = ['HAD', 'BIR']
-
 ###############################################################################
 # 2) Additional inputs
-###############################################################################
-
 # No need to modify them if following the suggested structure and parameters
 # from Campanya et al., 2018
 

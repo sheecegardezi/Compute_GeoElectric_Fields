@@ -217,6 +217,8 @@ def main():
     B = np.matrix(np.diag(1 / We[:truncate]))
     C = np.matrix(Ue[:, range(0, truncate)].T)
     Tmatrix = np.vstack((TmatrixX, TmatrixY))
+    np.set_printoptions(precision=4)
+    print(Tmatrix.size)
     Tmatrix = np.nan_to_num(Tmatrix)
 
 
@@ -297,7 +299,9 @@ def main():
             secsy_id = open(secs_path + fname + storm + "magBy" + ip, 'w+')
             np.savetxt(secsy_id, obs_by_secs[:, value], fmt=['%10.3f'])
             secsy_id.close()
-
+    # stop here if only want to calculating SECS, LJW 2019-04-11
+    print("stop here if only want to calculating SECS.")
+    sys.exit(0)
     ################################################################################
     # 4) Define new variables for computing the e_fields
     ################################################################################
