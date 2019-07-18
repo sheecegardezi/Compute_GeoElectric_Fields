@@ -1,0 +1,186 @@
+>HEAD
+    ACQBY=None
+    ACQDATE=29/04/14
+    DATAID=SA174
+    ELEV=180.000
+    FILEBY=None
+    LAT=-32.998070
+    LOC=AusLAMP South Australia
+    LONG=136.001170
+    FILEDATE=2018/11/22 01:25:25 UTC
+    EMPTY=1e+32
+    PROGDATE=2018-11-22
+    PROGVERS=MTpy
+    COORDINATE_SYSTEM=Geomagnetic North
+    DECLINATION=0.000
+    DATUM=WGS84
+    PROJECT=AusLAMP South Australia
+    SURVEY=None
+
+>INFO
+    fieldnotes.datalogger.manufacturer = Earth Data Logger
+    fieldnotes.dataquality.author = ['S. Thiel', ' K. Robertson']
+    fieldnotes.dataquality.good_from_period = 8.0
+    fieldnotes.dataquality.good_to_period = 16000.0
+    fieldnotes.electrode_ex.id = 1004.001
+    fieldnotes.electrode_ex.manufacturer = SDEX France
+    fieldnotes.electrode_ex.type = Pb-PbCl
+    fieldnotes.electrode_ex.x = 0.0
+    fieldnotes.electrode_ex.x2 = 48.0
+    fieldnotes.electrode_ex.y = 0.0
+    fieldnotes.electrode_ex.y2 = 0.0
+    fieldnotes.electrode_ey.id = 1005.001
+    fieldnotes.electrode_ey.x = 0.0
+    fieldnotes.electrode_ey.x2 = 0.0
+    fieldnotes.electrode_ey.y = 0.0
+    fieldnotes.electrode_ey.y2 = 46.3
+    fieldnotes.magnetometer_hx.manufacturer = Lemi
+    processing.software.name = ['Birrp 5.0', ' 5.2']
+    processing.processed_by = ['GSSA', ' Uni of Adelaide']
+    processing.sign_convention = exp(+i \omega t)
+    copyright.conditions_of_use = All data and metadata for this survey are available free of charge and may be copied freely duplicated and further distributed provided this data set is cited as the reference. While the author(s) strive to provide data and metadata of best possible quality the author(s) of this data set do not make any claims promises or guarantees about the accuracy completeness or adequacy of this information and expressly disclaim liability for errors and omissions in the contents of this file. Guidelines about the quality or limitations of the data and metadata as obtained from the author(s) are included for informational purposes only.
+    provenance.creator.organization = Geological Survey of South Australia
+    provenance.creator.organization_url = http://energymining.sa.gov.au/minerals/geoscience/geological_survey
+    provenance.creator.email = resources.customerservices@sa.gov.au
+    provenance.submitter.email = ['Stephan.Thiel@sa.gov.au', ' Kate.Robertson2@sa.gov.au']
+    provenance.creating_application = MTpy
+    provenance.creation_time = 2017-11-27 21:54:49
+
+>=DEFINEMEAS
+    MAXCHAN=7
+    MAXRUN=999
+    MAXMEAS=7
+    REFLAT=-32.998070
+    REFLONG=136.001170
+    REFELEV=180.000
+    REFTYPE=Geomagnetic North
+    UNITS=m
+
+>NONE ID=None CHTYPE=None X=0.0  Y=0.0  AZM=0.0  ACQCHAN=1   
+>NONE ID=None CHTYPE=None X=0.0  Y=180.0 AZM=0.0  ACQCHAN=2   
+>NONE ID=None CHTYPE=None X=0.0  Y=0.0  AZM=270.0 ACQCHAN=3   
+>NONE ID=1004 CHTYPE=None X=0.0  Y=0.0  X2=48.0 Y2=0.0  ACQCHAN=4   
+>NONE ID=1005 CHTYPE=None X=0.0  Y=0.0  X2=0.0  Y2=46.3 ACQCHAN=5   
+
+>=MTSECT
+    NFREQ=23
+    SECTID=SA174
+    NCHAN=5
+    MAXBLKS=999
+    EX=None
+    EY=None
+    HX=None
+    HY=None
+    HZ=None
+
+>!****FREQUENCIES****!
+>FREQ // 23
+   1.250000e-01   9.375000e-02   6.250000e-02   4.687500e-02   3.125000e-02   2.343800e-02
+   1.562500e-02   1.171900e-02   7.812500e-03   5.859400e-03   3.906200e-03   2.929700e-03
+   1.953100e-03   1.464800e-03   9.765600e-04   7.324200e-04   4.882800e-04   3.662100e-04
+   2.441400e-04   1.831100e-04   1.220700e-04   9.155300e-05   6.103500e-05
+>!****IMPEDANCE ROTATION ANGLES****!
+>ZROT // 23
+   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00
+   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00
+   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00
+   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00
+>!****IMPEDANCES****!
+>ZXXR ROT=ZROT // 23
+   3.286800e+00   2.313500e+00   2.334900e+00   2.221700e+00   1.700200e+00   1.540900e+00
+   1.392400e+00   1.262900e+00   9.878700e-01   7.986600e-01   4.720200e-01   3.136000e-01
+   2.485800e-02  -3.708200e-02  -1.563000e-01  -1.825100e-01  -2.486000e-01  -2.671700e-01
+  -2.286900e-01  -2.200900e-01  -3.247500e-01  -2.711500e-01   4.948600e-02
+>ZXXI ROT=ZROT // 23
+   1.000000e+00   1.136100e+00   8.490300e-01   9.757100e-01   8.876300e-01   8.591500e-01
+   8.321400e-01   8.690200e-01   9.179400e-01   9.037600e-01   8.632400e-01   8.120100e-01
+   6.470100e-01   5.065100e-01   3.563900e-01   2.632800e-01   1.607500e-01   1.384200e-01
+  -2.807900e-02  -1.266700e-01  -1.645400e-01   8.463000e-02   3.208000e-01
+>ZXX.VAR ROT=ZROT // 23
+   5.488900e-01   1.437300e-01   5.405000e-03   2.258400e-03   7.372600e-04   6.627900e-04
+   5.192800e-04   4.653000e-04   3.961500e-04   3.917600e-04   4.270400e-04   4.636100e-04
+   3.582400e-04   4.734300e-04   3.312700e-04   4.260500e-04   8.541200e-04   6.968700e-04
+   4.252100e-03   5.187500e-03   4.186400e-02   8.624400e-02   6.331200e-02
+>ZXYR ROT=ZROT // 23
+   9.167900e+00   8.594300e+00   6.949500e+00   6.244700e+00   5.422800e+00   4.930400e+00
+   4.077200e+00   3.589800e+00   2.890400e+00   2.400100e+00   1.894300e+00   1.639200e+00
+   1.411900e+00   1.293200e+00   1.149100e+00   1.063300e+00   9.370300e-01   8.579000e-01
+   6.908700e-01   4.601000e-01   1.626900e-01   2.547400e-01   1.905500e-01
+>ZXYI ROT=ZROT // 23
+   8.767500e+00   7.752800e+00   6.198500e+00   5.434800e+00   4.499800e+00   3.987900e+00
+   3.469800e+00   3.131500e+00   2.720800e+00   2.370200e+00   1.856300e+00   1.550000e+00
+   1.189700e+00   1.017200e+00   8.291600e-01   7.514100e-01   6.707700e-01   5.797800e-01
+   5.142000e-01   3.609900e-01   1.715000e-01   2.593200e-01   5.630100e-01
+>ZXY.VAR ROT=ZROT // 23
+   1.114100e-01   3.565800e-02   4.155800e-03   3.595200e-03   8.854800e-04   7.454300e-04
+   5.876300e-04   4.967300e-04   4.336700e-04   3.733500e-04   3.568000e-04   3.693300e-04
+   2.461900e-04   2.887600e-04   1.565300e-04   3.714600e-04   5.514000e-04   5.188800e-04
+   2.598300e-03   1.974100e-02   1.086100e-01   7.065700e-02   3.328700e-02
+>ZYXR ROT=ZROT // 23
+  -9.789500e+00  -6.010100e+00  -4.629300e+00  -4.138500e+00  -3.288600e+00  -2.930700e+00
+  -2.525600e+00  -2.215200e+00  -1.706700e+00  -1.367100e+00  -8.501100e-01  -5.901500e-01
+  -2.695500e-01  -1.385900e-01  -5.843700e-04   5.338400e-02   1.266000e-01   1.316200e-01
+   1.152400e-01   1.571400e-01   4.518400e-02   7.224000e-02   7.919000e-02
+>ZYXI ROT=ZROT // 23
+  -1.084700e+01  -8.211900e+00  -6.125000e+00  -5.509500e+00  -4.244200e+00  -3.494500e+00
+  -2.847000e+00  -2.547100e+00  -2.226100e+00  -2.014200e+00  -1.716900e+00  -1.475200e+00
+  -1.096700e+00  -8.720900e-01  -6.365600e-01  -4.933300e-01  -3.407500e-01  -2.426500e-01
+  -1.446400e-01  -1.263800e-01  -6.210600e-02  -4.767700e-02   1.134300e-01
+>ZYX.VAR ROT=ZROT // 23
+   3.449100e+00   5.812100e-01   1.379700e-02   5.338000e-03   1.407200e-03   1.640400e-03
+   8.966600e-04   8.371600e-04   5.880000e-04   6.514300e-04   5.690800e-04   5.955900e-04
+   4.042400e-04   4.145300e-04   3.646300e-04   6.160200e-04   4.572100e-04   2.054400e-04
+   6.141800e-04   5.146900e-04   1.281800e-03   3.750100e-04   2.477800e-03
+>ZYYR ROT=ZROT // 23
+  -4.241100e+00  -4.069100e+00  -3.888700e+00  -3.525000e+00  -3.195700e+00  -2.970200e+00
+  -2.562300e+00  -2.287800e+00  -1.917700e+00  -1.589500e+00  -1.302900e+00  -1.146000e+00
+  -1.021000e+00  -9.339200e-01  -8.709200e-01  -8.105900e-01  -7.381200e-01  -6.720600e-01
+  -5.423600e-01  -4.862200e-01  -4.217500e-01  -2.837700e-01  -2.014700e-01
+>ZYYI ROT=ZROT // 23
+  -2.640600e+00  -2.445000e+00  -2.070400e+00  -1.808300e+00  -1.668100e+00  -1.622300e+00
+  -1.538700e+00  -1.446800e+00  -1.369600e+00  -1.234300e+00  -9.848800e-01  -8.322400e-01
+  -6.643600e-01  -6.002600e-01  -4.971100e-01  -4.753200e-01  -4.684100e-01  -4.126000e-01
+  -4.137400e-01  -3.637300e-01  -4.380600e-01  -3.163500e-01  -2.292900e-01
+>ZYY.VAR ROT=ZROT // 23
+   6.935700e-01   1.540800e-01   9.814400e-03   8.305000e-03   1.720500e-03   1.917000e-03
+   9.564600e-04   6.911300e-04   5.595600e-04   6.650500e-04   4.608000e-04   3.358300e-04
+   2.382200e-04   2.379100e-04   1.693300e-04   3.172200e-04   2.532500e-04   1.426200e-04
+   4.749200e-04   2.193100e-03   2.955900e-03   2.826300e-04   2.416300e-03
+>!****TIPPER ROTATION ANGLES****!
+>TROT // 23
+   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00
+   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00
+   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00
+   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00
+>!****TIPPER****!
+>TXR.EXP ROT=TROT // 23
+   4.130500e-01   1.660700e-01   3.629700e-01   3.354000e-01   2.721600e-01   3.022700e-01
+   3.620300e-01   4.036900e-01   4.731900e-01   4.951200e-01   5.176400e-01   5.113300e-01
+   4.764200e-01   4.756000e-01   4.872500e-01   5.009500e-01   5.184400e-01   5.554300e-01
+   5.293400e-01   4.740400e-01   5.340300e-01   5.537900e-01   6.871300e-01
+>TXI.EXP ROT=TROT // 23
+  -8.499100e-02   2.316200e-02  -3.083400e-02   1.894600e-02  -7.145000e-02  -1.108800e-01
+  -1.430800e-01  -1.379800e-01  -1.254600e-01  -1.011800e-01  -4.203200e-02  -2.709500e-02
+  -3.773100e-04  -9.604200e-03  -2.651700e-02  -1.586200e-02  -8.440100e-03   5.474600e-02
+   4.656700e-02   6.028200e-03  -1.235000e-01  -2.055700e-02   3.818000e-01
+>TXVAR.EXP ROT=TROT // 23
+   3.275500e-02   1.138900e-02   5.108500e-04   1.875900e-04   9.134300e-05   1.488900e-04
+   9.725300e-05   1.502500e-04   9.074900e-05   1.482700e-04   1.090500e-04   2.141100e-04
+   8.655000e-05   1.372000e-04   1.584200e-04   2.776000e-04   4.462100e-04   7.404100e-04
+   9.505200e-04   2.157100e-03   2.914000e-03   2.693600e-03   3.663500e-02
+>TYR.EXP ROT=TROT // 23
+  -6.352900e-02  -1.494100e-01  -1.925100e-01  -1.950100e-01  -2.166600e-01  -2.419300e-01
+  -2.684200e-01  -2.972100e-01  -3.154600e-01  -3.369000e-01  -3.484100e-01  -3.611700e-01
+  -3.486100e-01  -3.419800e-01  -3.094500e-01  -2.840700e-01  -2.178400e-01  -2.454500e-01
+  -2.280400e-01  -1.469500e-01  -7.673800e-02   8.859800e-03   4.686200e-02
+>TYI.EXP ROT=TROT // 23
+   1.086600e-01   8.566000e-02   5.177700e-02   4.720600e-02   7.993800e-02   9.420100e-02
+   9.276900e-02   7.786600e-02   6.949700e-02   4.043300e-02   2.291000e-02   9.534600e-03
+  -1.562800e-02  -3.852800e-02  -6.817700e-02  -1.102900e-01  -1.245800e-01  -1.095600e-01
+  -1.035800e-01  -1.520000e-01  -1.942400e-01  -1.057200e-01  -1.374200e-01
+>TYVAR.EXP ROT=TROT // 23
+   6.427900e-03   2.994400e-03   3.619500e-04   2.898600e-04   1.111400e-04   1.688200e-04
+   1.127800e-04   1.364300e-04   9.270200e-05   1.741500e-04   7.465000e-05   1.183900e-04
+   5.645500e-05   7.369000e-05   8.624100e-05   2.578100e-04   2.797000e-04   6.031100e-04
+   3.776100e-04   2.937600e-03   6.993500e-03   1.373500e-03   2.241800e-02
+>END

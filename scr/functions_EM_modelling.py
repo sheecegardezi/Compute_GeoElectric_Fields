@@ -592,6 +592,7 @@ def compute_e_fields_secs(sb, tf_path, e_site, samp, hi, low, error_bf,
          data = f.readlines()
          f.close()
          print('edi file')
+         print(filename)
          file_format = 1
     except:
         check = 1

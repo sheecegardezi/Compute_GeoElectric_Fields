@@ -17,11 +17,15 @@ parallel_pool_size = 5
 
 # 1.1) Main Paths
 main_path = 'C:/Users/u11236/Desktop/Compute_GeoElectric_Fields/'
-# 1.1.2) Folder with input magnetic time series
+# 1.1.2) Folder with input magnetic time series Joan's
 #storm = '22-23_06_2015'
 
 # AWAGS magnetic storm data
 storm = '01-02_12_1989'
+
+# VIC64R Auslamp 21-22-12-2016
+#storm = '21-22-12-2016'
+
 
 # 1.2) Modelling approaches based on Campanya et al., 2018
 # 1.2.1) (1) for Approach #1 and (2) for Approach #2
@@ -42,12 +46,14 @@ avoid_comp_secs = 0
 
 # 1.3) Periods of interest
 # 1.3.1) maximum period to analyse (seconds)
-#hi = 10 ** 4.2
-hi = 10 ** 10.0
+hi = 10 ** 4.2   #Joan's
+hi = 10 ** 4.0   # VIC64R
+#hi = 10 ** 10.0
 
 # 1.3.2) minimum period to analyse (seconds)
 low = 10 ** 2
-low = 0
+# no bandpass filter
+#low = 0
 # 1.4) Sampling rate (seconds)
 samp = 60.
 
@@ -67,9 +73,17 @@ maxt = -800
 #secswest, secseast, secssouth, secsnorth = -15, 15, 43, 65
 
 # SA
-secswest, secseast, secssouth, secsnorth = 122, 145, -43, -20
-# SA and VIC, memory error
-secswest, secseast, secssouth, secsnorth = 120, 160, -45, -17
+#secswest, secseast, secssouth, secsnorth = 122, 145, -43, -20
+
+# SA extended, only do 2 telluric sites, memory error, but 365 SECS is ok. input 25 sites
+secswest, secseast, secssouth, secsnorth = 122, 155, -43, -20
+
+# reduce the inpt sites to 23 (ROM, CND CNB excluded) still memeory error
+#secswest, secseast, secssouth, secsnorth = 122, 151, -43, -20
+
+
+# SA and VIC, memory error 25 sites, not working for this case
+#secswest, secseast, secssouth, secsnorth = 120, 160, -45, -17
 
 # 1.7) Only for Approach #2
 # 1.7.1) Ref. magnetic site - regional signal (Approach #2)
@@ -97,7 +111,8 @@ ef_tf = 10e-2
 ef_h = 2e-2
 
 # 2.2) Statistics for error propagation
-stat = 1000
+#stat = 1000
+stat = 500
 
 # 2.3) Paths of interest
 # 2.3.1) Folder with data from a particluar geomagnetic storm
