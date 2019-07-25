@@ -33,12 +33,9 @@ from multiprocessing import Pool
 from scipy.interpolate import griddata
 from scr.secs_pre import secsmatrix_XYonly
 from scr.functions_EM_modelling import *
-
 import numpy as np
 import matplotlib.pyplot as plt
-
 from constants import *
-
 plt.close('all')
 
 
@@ -53,8 +50,6 @@ def main():
     if mode == 1:
         # 2.1) Read magnetic field data at the magnetic observatories
         mh_obs, h_obs = read_magnetics(in_path, str(obs_f), mag_path, secs_path, samp, hi, low, length, storm, 1)
-
-
 
     #######################################################################
     # 2.0) Approach #2
@@ -264,7 +259,6 @@ def main():
 
             print(minute)
             return (bx_interp, by_interp)
-
 
         output_secs = []
         if run_parallel_version:

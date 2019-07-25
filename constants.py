@@ -16,15 +16,19 @@ run_parallel_version = False
 parallel_pool_size = 5
 
 # 1.1) Main Paths
-main_path = 'C:/Users/u11236/Desktop/Compute_GeoElectric_Fields/'
+
+# main_path = 'C:/Users/u11236/Desktop/Compute_GeoElectric_Fields/'
+main_path = os.path.dirname(os.path.abspath(__file__))
+
+
 # 1.1.2) Folder with input magnetic time series Joan's
-#storm = '22-23_06_2015'
+# storm = '22-23_06_2015'
 
 # AWAGS magnetic storm data
 storm = '01-02_12_1989'
 
 # VIC64R Auslamp 21-22-12-2016
-#storm = '21-22-12-2016'
+# storm = '21-22-12-2016'
 
 
 # 1.2) Modelling approaches based on Campanya et al., 2018
@@ -46,14 +50,14 @@ avoid_comp_secs = 0
 
 # 1.3) Periods of interest
 # 1.3.1) maximum period to analyse (seconds)
-hi = 10 ** 4.2   #Joan's
+# hi = 10 ** 4.2   # Joan's
 hi = 10 ** 4.0   # VIC64R
-#hi = 10 ** 10.0
+# hi = 10 ** 10.0
 
 # 1.3.2) minimum period to analyse (seconds)
 low = 10 ** 2
 # no bandpass filter
-#low = 0
+# low = 0
 # 1.4) Sampling rate (seconds)
 samp = 60.
 
@@ -111,33 +115,34 @@ ef_tf = 10e-2
 ef_h = 2e-2
 
 # 2.2) Statistics for error propagation
-#stat = 1000
+# stat = 1000
 stat = 500
 
 # 2.3) Paths of interest
-# 2.3.1) Folder with data from a particluar geomagnetic storm
-data_path = main_path + 'in/data/' + storm + '/'
+# 2.3.1) Folder with data from a particular geomagnetic storm
+data_path = os.path.join(main_path, 'in', 'data', storm)
 
 # 2.3.2) Folder with magnetic fields time series
-mag_path = data_path + 'B/'
+mag_path = os.path.join( data_path, 'B')
 
 # 2.3.3) Folder with electric field time series
-e_path = data_path + 'E/'
+e_path = os.path.join(data_path, 'E')
 
 # 2.3.4) Folder with input parameters
-in_path = main_path + 'in/'
+in_path = os.path.join(main_path, 'in')
 
 # 2.3.5) Folder with output parameters
-out_path = main_path + 'out/'
+out_path = os.path.join(main_path, 'out')
 
 # 2.3.6) Folder with electromagnetic transfer functions
-tf_path = main_path + 'in/data/TF/'
+tf_path = os.path.join(main_path, 'in', 'data', 'TF')
 
 # 2.3.7) Folder with inputs - outputs for SECS interpolation
-secs_path = out_path + 'SECS/'
+secs_path = os.path.join(out_path, 'SECS')
 
 # 2.4) Files with sites of interest
 # 2.4.1) Magnetic observatories
+
 obs_f = 'Observatories.dat'
 
 # 2.4.2) Sites where to calculate the electric fields
@@ -145,10 +150,11 @@ sit_f = 'sites_interest.dat'
 
 # 2.5) Time series properties
 # 2.5.1) length of the time series
+
 len_ts = sorted(os.listdir(mag_path))
-len_path = mag_path + str(len_ts[0])
-f = open(len_path, 'r')
-len_val = np.loadtxt(f)
-f.close()
+len_path = os.path.join(mag_path, str(len_ts[0]))
+fileHandler = open(len_path, 'r')
+len_val = np.loadtxt(fileHandler)
+fileHandler.close()
 
 length = len_val.shape[0]

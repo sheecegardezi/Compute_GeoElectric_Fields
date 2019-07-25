@@ -6,24 +6,13 @@ Code for modelling GeoElectric fields during geomagnetic storms based on:
 
 This program was written by Joan Campanya i Llovet (of TCD) and Sean Blake (of TCD), and implemented and validated with data from Ireland and the UK (see [Campanya et al.](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2018SW001999), for more details). This code is a result of the IRC Enterpise partneship between UK Met Office and Trinity College Dublin. The project was in collaboration with British Geological Survey (BGS), and the Dublin Institute for Advanced Studies (DIAS).
 
-###0. Dependencies needed (*Compute_Geoelectric_p2 works with Python 2.7, Compute_Geoelectric_p3 works with Python 3*)
+###0. Install requirements :
 
-*numpy*
-
-*pandas*
-
-*matplotlib*
-
-*scipy*
-
-*seaborn*
-
-*geopy*
-
-*multiprocessing* (only to run it in parallel version)
-
+    pip install -r requirements.txt
+ 
 
 ###1. Main Structure of the program:
+
 The algorithm is divided in three folders:
 
 a.  **in** folder. Contains the input data 
